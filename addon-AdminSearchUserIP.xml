@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="AdminSearchUserIP" title="Admin Search User IP" version_string="1.0.0" version_id="1" url="" install_callback_class="AdminSearchIP_Installer" install_callback_method="install" uninstall_callback_class="AdminSearchIP_Installer" uninstall_callback_method="uninstall">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates>
+    <template title="quicksearch_usersIP"><![CDATA[<xen:if hascontent="true">
+	<tr>
+		<th class="primaryContent">{xen:phrase user}</th>
+		<td>
+			<ul class="secondaryContent blockLinksList">
+				<xen:contentcheck>
+					<xen:foreach loop="$results" value="$user">
+						<li><a href="{xen:adminlink users/edit, $user}">{$user.username} <dfn>{$user.email}</dfn></a></li>
+					</xen:foreach>
+				</xen:contentcheck>
+			</ul>
+		</td>
+	</tr>
+</xen:if>]]></template>
+  </admin_templates>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases/>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <bb_code_media_sites/>
+</addon>
