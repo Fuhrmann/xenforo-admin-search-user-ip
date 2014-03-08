@@ -4,6 +4,9 @@ This is an addon for the forum software [XenForo](http://www.xenforo.com). Compa
 
 <b>What it does:</b> This is a small add-on that allows you to search by IP address by using Admin Search.
 
+![image](image.png)
+
+
 ## 1.0.0
 
 Released in 30/01/2012
